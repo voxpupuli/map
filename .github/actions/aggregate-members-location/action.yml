@@ -1,0 +1,10 @@
+name: Aggregate members location
+description: Aggregate all members locations into a single JSON file.
+
+runs:
+  using: composite
+  steps:
+  - name: Aggregate members location
+    shell: bash
+    run: |
+      find _data -name \*.json | xargs cat | jq -s > data.json

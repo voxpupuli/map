@@ -1,0 +1,36 @@
+---
+name: Add me to the map
+
+on:
+  workflow_dispatch:
+    inputs:
+      latitude:
+        description: 'Latitude (float number between -90.0 and 90.0)'
+        required: true
+        type: number
+      longitude:
+        description: 'Longitude (float number between -180.0 and 180.0)'
+        required: true
+        type: number
+
+permissions:
+  contents: write
+
+jobs:
+  add_me_to_the_map:
+    name: 'Add me to the map'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Add location to map
+        run: |
+          echo "Adding location to map..."
+          echo '{"login":"${{ github.triggering_actor }}","lat": ${{ github.event.inputs.latitude }}, "lng": ${{ github.event.inputs.longitude }}}' >> _data/${{ github.triggering_actor }}.json
+      - uses: ./.github/actions/aggregate-members-location
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Add ${{ github.triggering_actor }} to the map"

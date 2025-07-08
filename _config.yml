@@ -1,8 +1,8 @@
-title: Community Members
-description: An interactive map of our community members.
-github_project: smortex/map
+title: Vox Pupuli Contributors
+description: An interactive map of the Vox Pupuli contributors
+github_project: voxpupuli/map
 baseurl: "" # the subpath of your site, e.g. /map
-url: "https://smortex.github.io/map" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://voxpupuli.org/map" # the base hostname & protocol for your site, e.g. https://example.com
 thunderforest_apikey: "f001bec5e17447b0b597e5a8e766bbf2" # the Thunderforest API key for map tiles
 
 # Build settings

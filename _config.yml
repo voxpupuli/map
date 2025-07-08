@@ -13,4 +13,5 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+  - LICENSE
   - README.md

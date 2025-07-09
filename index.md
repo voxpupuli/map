@@ -67,7 +67,11 @@ function callback(data) {
 
     L.control.scale({maxWidth: 300}).addTo(map);
 
-    map.fitWorld();
+    if (data.length >= {{ site.min_users_for_local_map }}) {
+        map.fitBounds(L.latLngBounds(members.map(e => e.getLatLng())));
+    } else {
+        map.fitWorld();
+    }
 }
 
 fetch("{{ site.url }}/data.json")

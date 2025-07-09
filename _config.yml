@@ -3,7 +3,7 @@ description: An interactive map of the Vox Pupuli contributors
 github_project: voxpupuli/map
 baseurl: "" # the subpath of your site, e.g. /map
 url: "https://voxpupuli.org/map" # the base hostname & protocol for your site, e.g. https://example.com
-thunderforest_apikey: "f001bec5e17447b0b597e5a8e766bbf2" # the Thunderforest API key for map tiles
+thunderforest_apikey: "b390253a3aca4964b1a1e0a73aeee548" # the Thunderforest API key for map tiles
 min_users_for_local_map: 5 # With that many users or more, bound the map to them, otherwise display the whole earth
 
 # Build settings

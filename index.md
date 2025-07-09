@@ -81,6 +81,40 @@ function callback(data) {
     terminator.addTo(map);
     setInterval(function() { terminator.setTime(); }, 60000);
 
+    new L.Control.BootstrapDropdowns({
+        position: "topright",
+        className: "menu",
+        autoClose: "outside",
+        menuItems: [
+            {
+                html: '<h5><i class="fa-solid fa-map-marked-alt"></i> Edit the pins on the map</h5><p>Use the GitHub actions below to add or remove yourself from the map. Use the parameters of the action to specify either an address or exact lat/long coordinates, to whatever degree of precision you are comfortable with.</p>',
+                title: "Edit the pins on the map",
+                header: true,
+            },
+            {
+                separator: true,
+            },
+            {
+                html: '<i class="fa-solid fa-user-plus"></i> Add yourself to the map',
+                title: "Add yourself",
+                href: "https://github.com/{{ site.github_project }}/actions/workflows/add_me_to_the_map.yml",
+            },
+            {
+                html: '<i class="fa-solid fa-user-minus"></i> Remove yourself from the map',
+                title: "Remove yourself",
+                href: "https://github.com/{{ site.github_project }}/actions/workflows/remove_me_from_the_map.yml",
+            },
+            {
+                separator: true,
+            },
+            {
+                html: '<i class="fa-solid fa-info-circle"></i> About this map',
+                title: "About",
+                href: "{{ site.url }}/about.html",  // href without target
+            }
+        ],
+    }).addTo(map);
+
     if (data.length >= {{ site.min_users_for_local_map }}) {
         map.fitBounds(L.latLngBounds(members.map(e => e.getLatLng())));
     } else {

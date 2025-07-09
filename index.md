@@ -5,6 +5,7 @@
 layout: map
 ---
 
+<script src="https://unpkg.com/@joergdietrich/leaflet.terminator"></script>
 <script language="javascript">
 function linkTo(member, content) {
   return `<a href="${member.html_url}" target="_blank">${content}</a>`;
@@ -66,6 +67,10 @@ function callback(data) {
     var map = L.map('map', {layers: [neighbourhood, markers_layer, members_layer]});
 
     L.control.scale({maxWidth: 300}).addTo(map);
+
+    var terminator = L.terminator({fillOpacity: 0.1, interactive: false});
+    terminator.addTo(map);
+    setInterval(function() { terminator.setTime(); }, 60000);
 
     if (data.length >= {{ site.min_users_for_local_map }}) {
         map.fitBounds(L.latLngBounds(members.map(e => e.getLatLng())));

@@ -29,7 +29,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: 'gh-pages'
       - name: Add user location
         run: |
           ./.github/actions/add-user-location ${{ github.triggering_actor }}

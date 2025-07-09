@@ -37,6 +37,10 @@ function memberPopup(layer) {
 };
 function callback(data) {
     var members = [];
+    // When the map wrap, markers jump from one side of the map to the other.
+    // To limit this, we have a copy of each marker which is beyond the map
+    // limit and make these transitions smoother.
+    var wrapped_members = [];
 
     var member_icon = L.icon({
         iconSize:      [25, 41],
@@ -50,6 +54,11 @@ function callback(data) {
 
     data.forEach(m => {
       members.push(L.marker([m.lat, m.lng], { icon: member_icon, title: m.login, user_data: m }).bindPopup(memberPopup, {minWidth: 200}));
+      if (m.lng < 0) {
+          wrapped_members.push(L.marker([m.lat, m.lng + 360], { icon: member_icon, title: m.login, user_data: m }).bindPopup(memberPopup, {minWidth: 200}));
+      } else {
+          wrapped_members.push(L.marker([m.lat, m.lng - 360], { icon: member_icon, title: m.login, user_data: m }).bindPopup(memberPopup, {minWidth: 200}));
+      }
     });
 
     var common_attribution = 'Map data © <a href="https://www.openstreetmap.fr/">OpenStreetMap</a> | Tiles: ';
@@ -59,11 +68,11 @@ function callback(data) {
 
     var markers_layer = L.markerClusterGroup();
 
-    var members_layer   = L.featureGroup.subGroup(markers_layer, members);
+    var members_layer = L.featureGroup.subGroup(markers_layer, members.concat(wrapped_members));
 
     markers_layer.addLayer(members_layer);
 
-    var map = L.map('map', {layers: [neighbourhood, markers_layer, members_layer]});
+    var map = L.map('map', {layers: [neighbourhood, markers_layer, members_layer], worldCopyJump: true});
 
     L.control.scale({maxWidth: 300}).addTo(map);
 

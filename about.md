@@ -5,7 +5,7 @@ layout: default
 
 {{ site.description }}
 
-[Back to the map]({{ site.url }})
+[Back to the map]({{ "/" | relative_url }})
 
 ## Who can appear on this map?
 

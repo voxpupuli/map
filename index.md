@@ -110,7 +110,7 @@ function callback(data) {
             {
                 html: '<i class="fa-solid fa-info-circle"></i> About this map',
                 title: "About",
-                href: "{{ site.url }}/about.html",  // href without target
+                href: "/map/about.html",  // href without target
             }
         ],
     }).addTo(map);

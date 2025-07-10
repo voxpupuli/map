@@ -87,8 +87,8 @@ function callback(data) {
         autoClose: "outside",
         menuItems: [
             {
-                html: '<h5><i class="fa-solid fa-map-marked-alt"></i> Edit the pins on the map</h5><p>Use the GitHub actions below to add or remove yourself from the map. Use the parameters of the action to specify either an address or exact lat/long coordinates, to whatever degree of precision you are comfortable with.</p>',
-                title: "Edit the pins on the map",
+                html: '<h5><i class="fa-solid fa-map-marked-alt"></i> Manage your visibility</h5><p>Run the GitHub actions below to manage your visibility based on your GitHub profile location. Or use the action parameters to specify either an address or exact lat/long coordinates, to whatever precision you are comfortable with. <i>Ask an admin for repo write permissions.</i></p>',
+                title: "Manage your visibility on the map",
                 header: true,
             },
             {

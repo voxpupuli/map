@@ -38,6 +38,10 @@ function memberPopup(layer) {
 };
 function callback(data) {
     var members = [];
+    // When the map wrap, markers jump from one side of the map to the other.
+    // To limit this, we have a copy of each marker which is beyond the map
+    // limit and make these transitions smoother.
+    var wrapped_members = [];
 
     var member_icon = L.icon({
         iconSize:      [25, 41],
@@ -45,26 +49,31 @@ function callback(data) {
         popupAnchor:   [1, -34],
         tooltipAnchor: [16, -28],
         shadowSize:    [41, 41],
-        iconUrl:       '{{ site.url }}/marker.png',
-        shadowUrl:     '{{ site.url }}/marker-shadow.png',
+        iconUrl:       '{{ "/marker.png" | relative_url }}',
+        shadowUrl:     '{{ "/marker-shadow.png" | relative_url }}',
     });
 
     data.forEach(m => {
       members.push(L.marker([m.lat, m.lng], { icon: member_icon, title: m.login, user_data: m }).bindPopup(memberPopup, {minWidth: 200}));
+      if (m.lng < 0) {
+          wrapped_members.push(L.marker([m.lat, m.lng + 360], { icon: member_icon, title: m.login, user_data: m }).bindPopup(memberPopup, {minWidth: 200}));
+      } else {
+          wrapped_members.push(L.marker([m.lat, m.lng - 360], { icon: member_icon, title: m.login, user_data: m }).bindPopup(memberPopup, {minWidth: 200}));
+      }
     });
 
     var common_attribution = 'Map data © <a href="https://www.openstreetmap.fr/">OpenStreetMap</a> | Tiles: ';
-    var map_instructions = ' | <a href="{{ site.url }}/about.html">Manage your visibility on this map</a>';
+    var map_instructions = ' | <a href="{{ "/about.html" | relative_url }}">Manage your visibility on this map</a>';
 
     var neighbourhood = L.tileLayer('https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey={{ site.thunderforest_apikey }}', {attribution: common_attribution + 'Neighbourhood © <a href="https://thunderforest.com/">Thunderforest</a>' + map_instructions});
 
     var markers_layer = L.markerClusterGroup();
 
-    var members_layer   = L.featureGroup.subGroup(markers_layer, members);
+    var members_layer = L.featureGroup.subGroup(markers_layer, members.concat(wrapped_members));
 
     markers_layer.addLayer(members_layer);
 
-    var map = L.map('map', {layers: [neighbourhood, markers_layer, members_layer]});
+    var map = L.map('map', {layers: [neighbourhood, markers_layer, members_layer], worldCopyJump: true});
 
     L.control.scale({maxWidth: 300}).addTo(map);
 
@@ -79,7 +88,7 @@ function callback(data) {
     }
 }
 
-fetch("{{ site.url }}/data.json")
+fetch('{{ "/data.json" | relative_url }}')
   .then(response => {
     if (!response.ok) {
       throw new Error(response.statusText);

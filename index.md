@@ -63,7 +63,7 @@ function callback(data) {
     });
 
     var common_attribution = 'Map data © <a href="https://www.openstreetmap.fr/">OpenStreetMap</a> | Tiles: ';
-    var map_instructions = ' | <a href="{{ "/about.html" | relative_url }}">Manage your visibility on this map</a>';
+    var map_instructions = ' | <a href="{{ "/about.html" | relative_url }}">About this map</a>';
 
     var neighbourhood = L.tileLayer('https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey={{ site.thunderforest_apikey }}', {attribution: common_attribution + 'Neighbourhood © <a href="https://thunderforest.com/">Thunderforest</a>' + map_instructions});
 
@@ -80,6 +80,40 @@ function callback(data) {
     var terminator = L.terminator({fillOpacity: 0.1, interactive: false});
     terminator.addTo(map);
     setInterval(function() { terminator.setTime(); }, 60000);
+
+    new L.Control.BootstrapDropdowns({
+        position: "topright",
+        className: "menu",
+        autoClose: "outside",
+        menuItems: [
+            {
+                html: '<h5><i class="fa-solid fa-map-marked-alt"></i> Manage your visibility</h5><p>Run the GitHub actions below to manage your visibility based on your GitHub profile location. Or use the action parameters to specify either an address or exact lat/long coordinates, to whatever precision you are comfortable with. <i>Ask an admin for repo write permissions.</i></p>',
+                title: "Manage your visibility on the map",
+                header: true,
+            },
+            {
+                separator: true,
+            },
+            {
+                html: '<i class="fa-solid fa-user-plus"></i> Add me to the map',
+                title: "Add yourself",
+                href: "https://github.com/{{ site.github_project }}/actions/workflows/add_me_to_the_map.yml",
+            },
+            {
+                html: '<i class="fa-solid fa-user-minus"></i> Remove me from the map',
+                title: "Remove yourself",
+                href: "https://github.com/{{ site.github_project }}/actions/workflows/remove_me_from_the_map.yml",
+            },
+            {
+                separator: true,
+            },
+            {
+                html: '<i class="fa-solid fa-info-circle"></i> About this map',
+                title: "About",
+                href: "{{ "/about.html" | relative_url }}",
+            }
+        ],
+    }).addTo(map);
 
     if (data.length >= {{ site.min_users_for_local_map }}) {
         map.fitBounds(L.latLngBounds(members.map(e => e.getLatLng())));

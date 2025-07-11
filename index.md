@@ -95,12 +95,12 @@ function callback(data) {
                 separator: true,
             },
             {
-                html: '<i class="fa-solid fa-user-plus"></i> Add yourself to the map',
+                html: '<i class="fa-solid fa-user-plus"></i> Add me to the map',
                 title: "Add yourself",
                 href: "https://github.com/{{ site.github_project }}/actions/workflows/add_me_to_the_map.yml",
             },
             {
-                html: '<i class="fa-solid fa-user-minus"></i> Remove yourself from the map',
+                html: '<i class="fa-solid fa-user-minus"></i> Remove me from the map',
                 title: "Remove yourself",
                 href: "https://github.com/{{ site.github_project }}/actions/workflows/remove_me_from_the_map.yml",
             },

@@ -1,68 +1,23 @@
 [
   {
-    "login": "kenyon",
-    "lat": 32.7174202,
-    "lng": -117.162772
-  },
-  {
-    "login": "cvquesty",
-    "lat": 35.1595182,
-    "lng": -84.8766115
-  },
-  {
-    "login": "TheMeier",
-    "lat": 48.1371079,
-    "lng": 11.5753822
-  },
-  {
-    "login": "smortex",
-    "lat": -17.55933,
-    "lng": -149.60352
-  },
-  {
     "login": "zilchms",
     "lat": 48.684969,
     "lng": 9.0113444
   },
   {
-    "login": "marcusdots",
-    "lat": 48.3984968,
-    "lng": 9.9912458
+    "login": "saz",
+    "lat": 48.7178603,
+    "lng": 9.2630693
   },
   {
-    "login": "bastelfreak",
-    "lat": 50.362627179031364,
-    "lng": 7.598438740107184
-  },
-  {
-    "login": "lbetz",
-    "lat": 52.624056,
-    "lng": 10.081052
-  },
-  {
-    "login": "jay7x",
-    "lat": 1.357107,
-    "lng": 103.8194992
-  },
-  {
-    "login": "jessereynolds",
-    "lat": -37.89008,
-    "lng": 145.06736
+    "login": "rwaffen",
+    "lat": 51.3406321,
+    "lng": 12.3747329
   },
   {
     "login": "jstraw",
     "lat": 41.8755616,
     "lng": -87.6244212
-  },
-  {
-    "login": "silug",
-    "lat": 38.593899,
-    "lng": -89.996649
-  },
-  {
-    "login": "SimonHoenscheid",
-    "lat": 52.510885,
-    "lng": 13.3989367
   },
   {
     "login": "binford2k",
@@ -75,8 +30,58 @@
     "lng": 7.228536
   },
   {
-    "login": "rwaffen",
-    "lat": 51.3406321,
-    "lng": 12.3747329
+    "login": "cvquesty",
+    "lat": 35.1595182,
+    "lng": -84.8766115
+  },
+  {
+    "login": "jessereynolds",
+    "lat": -37.89008,
+    "lng": 145.06736
+  },
+  {
+    "login": "lbetz",
+    "lat": 52.624056,
+    "lng": 10.081052
+  },
+  {
+    "login": "marcusdots",
+    "lat": 48.3984968,
+    "lng": 9.9912458
+  },
+  {
+    "login": "bastelfreak",
+    "lat": 50.362627179031364,
+    "lng": 7.598438740107184
+  },
+  {
+    "login": "smortex",
+    "lat": -17.55933,
+    "lng": -149.60352
+  },
+  {
+    "login": "SimonHoenscheid",
+    "lat": 52.510885,
+    "lng": 13.3989367
+  },
+  {
+    "login": "jay7x",
+    "lat": 1.357107,
+    "lng": 103.8194992
+  },
+  {
+    "login": "silug",
+    "lat": 38.593899,
+    "lng": -89.996649
+  },
+  {
+    "login": "TheMeier",
+    "lat": 48.1371079,
+    "lng": 11.5753822
+  },
+  {
+    "login": "kenyon",
+    "lat": 32.7174202,
+    "lng": -117.162772
   }
 ]

@@ -1,13 +1,63 @@
 [
   {
+    "login": "jessereynolds",
+    "lat": -37.89008,
+    "lng": 145.06736
+  },
+  {
+    "login": "cvquesty",
+    "lat": 35.1595182,
+    "lng": -84.8766115
+  },
+  {
+    "login": "albatrossflavour",
+    "lat": -34.016667,
+    "lng": 150.683333
+  },
+  {
+    "login": "sebastianrakel",
+    "lat": 52.499215,
+    "lng": 7.228536
+  },
+  {
+    "login": "bastelfreak",
+    "lat": 50.362627179031364,
+    "lng": 7.598438740107184
+  },
+  {
+    "login": "trefzer",
+    "lat": 46.9484742,
+    "lng": 7.4521749
+  },
+  {
+    "login": "smortex",
+    "lat": -17.55933,
+    "lng": -149.60352
+  },
+  {
+    "login": "marcusdots",
+    "lat": 48.3984968,
+    "lng": 9.9912458
+  },
+  {
     "login": "zilchms",
     "lat": 48.684969,
     "lng": 9.0113444
   },
   {
-    "login": "saz",
-    "lat": 48.7178603,
-    "lng": 9.2630693
+    "login": "SimonHoenscheid",
+    "lat": 52.510885,
+    "lng": 13.3989367
+  },
+  {
+    "login": "cyberkov",
+    "lat": 48.2083537,
+    "lng": 16.3725042
+  },
+  {
+    "login": "vchepkov",
+    "lat": 39.1155,
+    "lng": -77.5644
   },
   {
     "login": "rwaffen",
@@ -20,9 +70,14 @@
     "lng": -87.6244212
   },
   {
-    "login": "cyberkov",
-    "lat": 48.2083537,
-    "lng": 16.3725042
+    "login": "kenyon",
+    "lat": 32.7174202,
+    "lng": -117.162772
+  },
+  {
+    "login": "TheMeier",
+    "lat": 48.1371079,
+    "lng": 11.5753822
   },
   {
     "login": "binford2k",
@@ -30,47 +85,17 @@
     "lng": -122.655
   },
   {
-    "login": "sebastianrakel",
-    "lat": 52.499215,
-    "lng": 7.228536
-  },
-  {
-    "login": "cvquesty",
-    "lat": 35.1595182,
-    "lng": -84.8766115
-  },
-  {
-    "login": "jessereynolds",
-    "lat": -37.89008,
-    "lng": 145.06736
-  },
-  {
     "login": "lbetz",
     "lat": 52.624056,
     "lng": 10.081052
   },
   {
-    "login": "marcusdots",
-    "lat": 48.3984968,
-    "lng": 9.9912458
+    "login": "saz",
+    "lat": 48.7178603,
+    "lng": 9.2630693
   },
   {
-    "login": "trefzer",
-    "lat": 46.9484742,
-    "lng": 7.4521749
-  },
-  {
-    "login": "bastelfreak",
-    "lat": 50.362627179031364,
-    "lng": 7.598438740107184
-  },
-  {
-    "login": "smortex",
-    "lat": -17.55933,
-    "lng": -149.60352
-  },
-  {
-    "login": "SimonHoenscheid",
+    "login": "tuxmea",
     "lat": 52.510885,
     "lng": 13.3989367
   },
@@ -83,20 +108,5 @@
     "login": "silug",
     "lat": 38.593899,
     "lng": -89.996649
-  },
-  {
-    "login": "TheMeier",
-    "lat": 48.1371079,
-    "lng": 11.5753822
-  },
-  {
-    "login": "vchepkov",
-    "lat": 39.1155,
-    "lng": -77.5644
-  },
-  {
-    "login": "kenyon",
-    "lat": 32.7174202,
-    "lng": -117.162772
   }
 ]

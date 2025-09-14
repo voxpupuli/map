@@ -1,5 +1,10 @@
 [
   {
+    "login": "rusty",
+    "lat": 38.453023,
+    "lng": -86.749505
+  },
+  {
     "login": "cyberkov",
     "lat": 48.2083537,
     "lng": 16.3725042
@@ -8,6 +13,11 @@
     "login": "saz",
     "lat": 48.7178603,
     "lng": 9.2630693
+  },
+  {
+    "login": "nmburgan",
+    "lat": 45.50548,
+    "lng": -122.6551
   },
   {
     "login": "rwaffen",
@@ -70,14 +80,14 @@
     "lng": -89.996649
   },
   {
-    "login": "nmburgan",
-    "lat": 45.50548,
-    "lng": -122.6551
-   },
-  {
     "login": "TheMeier",
     "lat": 48.1371079,
     "lng": 11.5753822
+  },
+  {
+    "login": "austb",
+    "lat": 45.4988459,
+    "lng": -122.7085901
   },
   {
     "login": "bastelfreak",
@@ -93,6 +103,11 @@
     "login": "lbetz",
     "lat": 52.624056,
     "lng": 10.081052
+  },
+  {
+    "login": "anthonysomerset",
+    "lat": 52.1391168,
+    "lng": -0.4720977
   },
   {
     "login": "jstraw",

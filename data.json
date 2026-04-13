@@ -1,123 +1,18 @@
 [
   {
-    "login": "TheMeier",
-    "lat": 48.1371079,
-    "lng": 11.5753822
-  },
-  {
-    "login": "bastelfreak",
-    "lat": 50.362627179031364,
-    "lng": 7.598438740107184
-  },
-  {
-    "login": "rusty",
-    "lat": 38.453023,
-    "lng": -86.749505
-  },
-  {
-    "login": "silug",
-    "lat": 38.593899,
-    "lng": -89.996649
-  },
-  {
-    "login": "nmburgan",
-    "lat": 45.50548,
-    "lng": -122.6551
-  },
-  {
-    "login": "zilchms",
-    "lat": 48.684969,
-    "lng": 9.0113444
-  },
-  {
-    "login": "corporate-gadfly",
-    "lat": 43.65107,
-    "lng": -79.347015
-  },
-  {
-    "login": "cvquesty",
-    "lat": 35.1595182,
-    "lng": -84.8766115
-  },
-  {
-    "login": "marcusdots",
-    "lat": 48.3984968,
-    "lng": 9.9912458
-  },
-  {
-    "login": "jstraw",
-    "lat": 41.8755616,
-    "lng": -87.6244212
-  },
-  {
     "login": "SimonHoenscheid",
     "lat": 52.510885,
     "lng": 13.3989367
   },
   {
-    "login": "jessereynolds",
-    "lat": -37.89008,
-    "lng": 145.06736
+    "login": "TheMeier",
+    "lat": 48.1371079,
+    "lng": 11.5753822
   },
   {
-    "login": "binford2k",
-    "lat": 45.505556,
-    "lng": -122.655
-  },
-  {
-    "login": "austb",
-    "lat": 45.4988459,
-    "lng": -122.7085901
-  },
-  {
-    "login": "rwaffen",
-    "lat": 51.3406321,
-    "lng": 12.3747329
-  },
-  {
-    "login": "cyberkov",
-    "lat": 48.2083537,
-    "lng": 16.3725042
-  },
-  {
-    "login": "lbetz",
-    "lat": 52.624056,
-    "lng": 10.081052
-  },
-  {
-    "login": "vchepkov",
-    "lat": 39.1155,
-    "lng": -77.5644
-  },
-  {
-    "login": "tuxmea",
-    "lat": 52.510885,
-    "lng": 13.3989367
-  },
-  {
-    "login": "trefzer",
-    "lat": 46.9484742,
-    "lng": 7.4521749
-  },
-  {
-    "login": "yakatz",
-    "lat": 38.8950368,
-    "lng": -77.0365427
-  },
-  {
-    "login": "smortex",
-    "lat": -17.55933,
-    "lng": -149.60352
-  },
-  {
-    "login": "jay7x",
-    "lat": 1.357107,
-    "lng": 103.8194992
-  },
-  {
-    "login": "saz",
-    "lat": 48.7178603,
-    "lng": 9.2630693
+    "login": "TuningYourCode",
+    "lat": 48.1371079,
+    "lng": 11.5753822
   },
   {
     "login": "albatrossflavour",
@@ -130,13 +25,123 @@
     "lng": -0.4720977
   },
   {
+    "login": "austb",
+    "lat": 45.4988459,
+    "lng": -122.7085901
+  },
+  {
+    "login": "bastelfreak",
+    "lat": 50.362627179031364,
+    "lng": 7.598438740107184
+  },
+  {
+    "login": "binford2k",
+    "lat": 45.505556,
+    "lng": -122.655
+  },
+  {
+    "login": "corporate-gadfly",
+    "lat": 43.65107,
+    "lng": -79.347015
+  },
+  {
+    "login": "cvquesty",
+    "lat": 35.1595182,
+    "lng": -84.8766115
+  },
+  {
+    "login": "cyberkov",
+    "lat": 48.2083537,
+    "lng": 16.3725042
+  },
+  {
+    "login": "jay7x",
+    "lat": 1.357107,
+    "lng": 103.8194992
+  },
+  {
+    "login": "jessereynolds",
+    "lat": -37.89008,
+    "lng": 145.06736
+  },
+  {
+    "login": "jstraw",
+    "lat": 41.8755616,
+    "lng": -87.6244212
+  },
+  {
     "login": "kenyon",
     "lat": 32.7174202,
     "lng": -117.162772
   },
   {
+    "login": "lbetz",
+    "lat": 52.624056,
+    "lng": 10.081052
+  },
+  {
+    "login": "marcusdots",
+    "lat": 48.3984968,
+    "lng": 9.9912458
+  },
+  {
+    "login": "nmburgan",
+    "lat": 45.50548,
+    "lng": -122.6551
+  },
+  {
+    "login": "rusty",
+    "lat": 38.453023,
+    "lng": -86.749505
+  },
+  {
+    "login": "rwaffen",
+    "lat": 51.3406321,
+    "lng": 12.3747329
+  },
+  {
+    "login": "saz",
+    "lat": 48.7178603,
+    "lng": 9.2630693
+  },
+  {
     "login": "sebastianrakel",
     "lat": 52.499215,
     "lng": 7.228536
+  },
+  {
+    "login": "silug",
+    "lat": 38.593899,
+    "lng": -89.996649
+  },
+  {
+    "login": "smortex",
+    "lat": -17.55933,
+    "lng": -149.60352
+  },
+  {
+    "login": "trefzer",
+    "lat": 46.9484742,
+    "lng": 7.4521749
+  },
+  {
+    "login": "tuxmea",
+    "lat": 52.510885,
+    "lng": 13.3989367
+  },
+  {
+    "login": "vchepkov",
+    "lat": 39.1155,
+    "lng": -77.5644
+  },
+  {
+    "login": "yakatz",
+    "lat": 38.8950368,
+    "lng": -77.0365427
+  },
+  {
+    "login": "zilchms",
+    "lat": 48.684969,
+    "lng": 9.0113444
   }
 ]
